@@ -1,26 +1,24 @@
-<div class="adress__container items-center">
-    <div class="col-md-8 p-3">
-        <p>Endereço</p>
-        <form [formGroup]="enderecoForm">
-            <div class="row">
-                <div class="col-md-6 p-3">
-                    <ui-input formControlName="cep" label="CEP" placeholder="Preencha o CEP"
-                    type="number" maxLenght="5"></ui-input>
-                    <ui-input formControlName="numero" label="Número" placeholder="Preencha o Número"
-                    type="number"></ui-input>
-                    <ui-input formControlName="cidade" label="Cidade" placeholder="Preencha a Cidade"
-                    type="text"></ui-input>
-                </div>
-                <div class="col-md-6 p-3">
-                    <ui-input formControlName="rua" label="Rua" placeholder="Preencha a Rua"
-                    type="text"></ui-input>
-                    <ui-input formControlName="bairro" label="Bairro" placeholder="Preencha o Bairro"
-                    type="text"></ui-input>
-                    <ui-input formControlName="estados" label="Estados" placeholder="Selecione o Estado"
-                    type="select"></ui-input>
-                </div>
+<ui-page-container [title]="'Endereço'">
+
+    <form [formGroup]="enderecoForm">
+        <div class="row">
+            <div class="col-md-6 p-3">
+                <ui-input formControlName="cep" label="CEP" placeholder="Preencha o CEP"
+                type="number" maxLenght="5"></ui-input>
+                <ui-input formControlName="numero" label="Número" placeholder="Preencha o Número"
+                type="number"></ui-input>
+                <ui-input formControlName="cidade" label="Cidade" placeholder="Preencha a Cidade"
+                type="text"></ui-input>
             </div>
-            <button (click)="imprimir()">Console.log()</button>
-        </form>
-    </div>
-</div>
+            <div class="col-md-6 p-3">
+                <ui-input formControlName="rua" label="Rua" placeholder="Preencha a Rua"
+                type="text"></ui-input>
+                <ui-input formControlName="bairro" label="Bairro" placeholder="Preencha o Bairro"
+                type="text"></ui-input>
+                <ui-input formControlName="estados" label="Estados" placeholder="Selecione o Estado"
+                type="select"></ui-input>
+            </div>
+        </div>
+        <button (click)="imprimir()">Console.log()</button>
+    </form>
+</ui-page-container>

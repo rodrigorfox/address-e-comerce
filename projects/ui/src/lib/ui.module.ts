@@ -3,13 +3,15 @@ import { UiComponent } from './ui.component';
 import { InputComponent } from './components/input/input.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { PageContainerComponent } from './components/page-container/page-container.component';
 
 
 
 @NgModule({
   declarations: [
     UiComponent,
-    InputComponent
+    InputComponent,
+    PageContainerComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { CommonModule } from '@angular/common';
   ],
   exports: [
     UiComponent,
-    InputComponent
+    InputComponent,
+    PageContainerComponent
   ]
 })
 export class UiModule { }
